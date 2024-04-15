@@ -1,0 +1,27 @@
+<section class="admin-products-index">
+
+  <header class="page-header">
+    <h1>All Catergories</h1>
+  </header>
+
+
+
+  <div class="panel panel-default products">
+  <div class="well">
+  <%= link_to '+ New Category', new_admin_category_path, class: 'btn btn-info' %>
+  </div>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+      <%= render @categories %>
+      </tbody>
+    </table>
+
+  </div>
+
+</section>
